@@ -2,7 +2,9 @@
 Author: Devin DeWitt
 File: pcaScript.py
 
-Purpose: Accept a data set with dimension M and project it onto dimension D
+Purpose: Accept a data set with dimension M and project it into 1, 2, and 3 dimensions
+
+Date: 05/30/2019
 """
 
 import sys
@@ -87,7 +89,16 @@ fig2d.show()
 
 fig3d = plt.figure(2)
 ax = fig3d.gca(projection='3d')
-ax.plot_trisurf(X[0, :], X[1, :], X[2, :], linewidth=0.2, antialiased=True)
+ax.set_aspect('equal')
+scat = ax.scatter(X[0, :], X[1, :], X[2, :])
+max_range = np.array([X[0, :].max() - X[0, :].min(), X[1, :].max() - X[1, :].min(),
+                      X[2, :].max() - X[2, :].min()]).max()
+Xb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][0].flatten() + 0.5 * (X[0, :].max() + X[0, :].min())
+Yb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][1].flatten() + 0.5 * (X[1, :].max() + X[1, :].min())
+Zb = 0.5*max_range*np.mgrid[-1:2:2, -1:2:2, -1:2:2][2].flatten() + 0.5 * (X[2, :].max() + X[2, :].min())
+for xb, yb, zb in zip(Xb, Yb, Zb):
+    ax.plot([xb], [yb], [zb])
+
 fig3d.show()
 
 fig1d = plt.figure(3)
