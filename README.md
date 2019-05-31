@@ -5,11 +5,15 @@ To use the program simply provide a properly formatted csv file as a command lin
 The script parses the csv file, performs pca on the data, and generates figures corresponding to projections onto 
 1, 2, and 3 dimensions.
 
-The format for the csv file is as follows:\n
-  Rows represent a data point in n-dimensional space\n
-  The number of columns, n, is the dimension of the input data\n
-  The number of rows is the number of example data points being processed\n
-  All cells should contain number values, no text in the file\n
+The format for the csv file is as follows:
+
+  Rows represent a data point in n-dimensional space
+  
+  The number of columns, n, is the dimension of the input data
+  
+  The number of rows is the number of example data points being processed
+  
+  All cells should contain number values, no text in the file
   
   
   
