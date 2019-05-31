@@ -7,13 +7,15 @@ The script parses the csv file, performs pca on the data, and generates figures 
 
 The format for the csv file is as follows:
 
-  Rows represent a data point in n-dimensional space
+Rows represent a data point in n-dimensional space
   
-  The number of columns, n, is the dimension of the input data
+The number of columns, n, is the dimension of the input data
   
-  The number of rows is the number of example data points being processed
+The number of rows is the number of example data points being processed
   
-  All cells should contain number values, no text in the file
+All cells should contain number values, no text in the file
   
-  
+An example 10 dimensional data set is provided, data.csv, to test the program.
+
+
   
