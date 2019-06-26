@@ -21,7 +21,7 @@ When run, the test data set creates the following outputs:
 
 ![data.csv Reduced to 2 Dimensions](https://github.com/devindewitt/pcaScript/blob/assets/2-D.png?raw=true)
 
-![data.csv Reduced to 2 Dimensions](https://github.com/devindewitt/pcaScript/blob/assets/3-D.png)
+![data.csv Reduced to 2 Dimensions](https://github.com/devindewitt/pcaScript/blob/assets/3-D.png?raw=true)
 
 
 
