@@ -19,7 +19,7 @@ An example 10 dimensional data set is provided, data.csv, to test the program.
 
 When run, the test data set creates the following outputs:
 
-![data.csv Reduced to 2 Dimensions](https://github.com/devindewitt/pcaScript/tree/assets/2-D.png?raw=true)
+![data.csv Reduced to 2 Dimensions](https://github.com/devindewitt/pcaScript/blob/assets/2-D.png)
 
 ![data.csv Reduced to 2 Dimensions](https://github.com/devindewitt/pcaScript/tree/assets/3-D.png?raw=true)
 
